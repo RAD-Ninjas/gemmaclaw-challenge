@@ -191,4 +191,4 @@ OpenClaw reads its config from `~/.openclaw/openclaw.json`. The quickstart scrip
 
 ## Troubleshooting
 
-See [resources/TROUBLESHOOTING.md](resources/TROUBLESHOOTING.md) for common issues, or ask in the GDG MV Discord/Slack.
+See [resources/TROUBLESHOOTING.md](resources/TROUBLESHOOTING.md) for common issues, or ask in the RAD Ninjas Discord  https://discord.gg/JPhjWJDj
