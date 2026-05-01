@@ -1,0 +1,11 @@
+# OpenClaw config — Gemma 3 270M (fallback for ultra-constrained hardware)
+# For Pi Zero 2 W, 4GB Pi 4, old phones
+
+llm:
+  provider: ollama
+  base_url: http://localhost:11434
+  model: gemma3:270m
+  context_length: 4096
+
+# This is the fallback option — only 125MB quantized
+# Text only, very limited, but runs on almost anything

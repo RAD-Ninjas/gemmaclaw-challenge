@@ -1,0 +1,15 @@
+# Gemma 4 E2B — Creative mode
+# Higher temperature for brainstorming, storytelling, creative writing
+#
+# Usage:
+#   ollama create gemma4-creative -f Modelfile.gemma4-e2b-creative
+#   ollama run gemma4-creative
+
+FROM gemma4:e2b
+
+PARAMETER temperature 0.9
+PARAMETER top_p 0.95
+PARAMETER top_k 64
+PARAMETER num_ctx 32768
+
+SYSTEM """You are a creative assistant running on local hardware. Be imaginative, expressive, and playful. Offer multiple ideas when brainstorming."""

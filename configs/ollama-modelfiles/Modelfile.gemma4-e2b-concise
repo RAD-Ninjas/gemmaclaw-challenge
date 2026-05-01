@@ -1,0 +1,15 @@
+# Gemma 4 E2B — Concise mode
+# For fast, short responses on constrained hardware
+#
+# Usage:
+#   ollama create gemma4-concise -f Modelfile.gemma4-e2b-concise
+#   ollama run gemma4-concise
+
+FROM gemma4:e2b
+
+PARAMETER temperature 0.3
+PARAMETER top_p 0.9
+PARAMETER num_ctx 8192
+PARAMETER num_predict 256
+
+SYSTEM """You are a concise assistant on edge hardware. Give short, direct answers. Skip pleasantries. Use bullet points for lists. If a one-sentence answer works, use one sentence."""

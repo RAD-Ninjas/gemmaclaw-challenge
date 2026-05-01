@@ -1,0 +1,12 @@
+# OpenClaw config — Gemma 4 26B-A4B (MoE)
+# For machines with 16GB+ RAM (Mac M1+, desktop Linux, Jetson Orin)
+# This model uses Mixture of Experts — only 4B params active per token
+
+llm:
+  provider: ollama
+  base_url: http://localhost:11434
+  model: gemma4:26b
+  context_length: 65536
+
+# 26B-A4B is much more capable than E2B but needs more RAM
+# Expect ~10-20 tok/s on Mac M1, ~5-10 tok/s on 16GB Linux box

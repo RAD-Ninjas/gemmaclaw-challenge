@@ -1,0 +1,16 @@
+# Gemma 4 E2B — Code assistant mode
+# Lower temperature for precise, deterministic code generation
+#
+# Usage:
+#   ollama create gemma4-coder -f Modelfile.gemma4-e2b-code
+#   ollama run gemma4-coder
+
+FROM gemma4:e2b
+
+PARAMETER temperature 0.2
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER num_ctx 32768
+PARAMETER repeat_penalty 1.1
+
+SYSTEM """You are a precise coding assistant running locally. Write clean, well-commented code. When asked to fix bugs, explain what went wrong. Prefer simple solutions. Always specify the language in code blocks."""

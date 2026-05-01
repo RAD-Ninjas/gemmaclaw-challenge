@@ -1,0 +1,11 @@
+# OpenClaw config — Gemma 4 E4B on Jetson / Mac
+# For devices with 8-16GB RAM
+
+llm:
+  provider: ollama
+  base_url: http://localhost:11434
+  model: gemma4:e4b
+  context_length: 65536
+
+# E4B is more capable than E2B — use it if you have the RAM
+# 65K context is a good balance between capability and memory

@@ -1,0 +1,11 @@
+# OpenClaw config — Gemma 4 E2B on Raspberry Pi 5
+# Copy to ~/.openclaw/openclaw.json (as JSON) or use with openclaw --config
+
+llm:
+  provider: ollama
+  base_url: http://localhost:11434
+  model: gemma4:e2b
+  context_length: 32768
+
+# 32K context keeps RAM usage manageable on 8GB Pi
+# E2B supports up to 128K but you'll want headroom for the OS
