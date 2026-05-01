@@ -57,7 +57,7 @@ Working starter examples are in the [`examples/`](examples/) directory — fork 
 
 Ad-hoc community showcase at **Sports Page, Mountain View**. Show up with your project, give a 3-minute lightning talk if you want to present. No pre-registration required.
 
-**RSVP on the [GDG Mountain View event page](#).**
+**RSVP on the [GDG Mountain View event page](https://gdg.community.dev/events/details/google-gdg-mountain-view-presents-gemma-4-claw-challenge-community-showcase/).**
 
 Awards voted on by the audience:
 - **Best Overall**
